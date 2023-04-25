@@ -44,7 +44,7 @@ const Slider = () => {
         onSwipeRight={onClickNext}
         slides={slides}
       >
-        <MainSlide slide={slides.currentImg} />
+        <MainSlide slides={slides} currImgIndex={slides.currentImgIndex}/>
       </SwipeableComponent>
       <div id="all__slides__container">
         <svg
